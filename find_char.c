@@ -2,7 +2,7 @@
 
 char *find_char(char const *source, char const *chars) {
     char const *p_char = chars;
-    char const *p_source = source;
+    char *p_source = source;
     while (*p_char != '\0')
     {
         while (*p_source != '\0' && *p_char != *p_source)
